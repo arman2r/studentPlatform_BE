@@ -19,7 +19,7 @@ obj/
 *.shm
 *.wal
 *.v2
-*.json
+#*.json
 *.log
 
 # VS folders
