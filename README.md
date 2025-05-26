@@ -26,6 +26,7 @@ Este proyecto es una API construida con **.NET Core 8** y utiliza **SQL Server**
 ## 🧩 Configuración inicial
 
 ### 1. Crear la base de datos
+#### **Importante**: Este paso solo aplica si vas a ejecutar el proyecto sin docker
 
 Antes de iniciar el backend, asegúrate de **crear la base de datos manualmente** en SQL Server (por ejemplo desde SSMS).  
 Si decides usar otro nombre o instancia, recuerda **actualizar la cadena de conexión** en:
@@ -37,7 +38,22 @@ Si decides usar otro nombre o instancia, recuerda **actualizar la cadena de cone
 
 ```
 
-### 2. Clonar el repositorio
+### 1.2. Ejecutar la migración inicial
+- **Si has creado la base de datos manualmente, asegúrate de ejecutar las migraciones iniciales para crear las tablas necesarias. Puedes hacer esto ejecutando el siguiente comando en la terminal:
+```bash
+dotnet ef migrations add InitialCreate
+dotnet ef database update
+```
+- Esto creará la estructura inicial de la base de datos y aplicará las migraciones necesarias.
+
+## 1.3. Poblar la base de datos con datos de ejemplo
+- Ejecuta el proyecto desde visual studio y apoyate con swagger para registrar profesores, estudiantes y materias(Subjects)
+- El proyecto tambien incluye un script de migración y un backup de la base de datos dentro de la carpeta mssql
+
+
+### 2. Clonar el repositorio y Ejecutar con Docker
+- **Asegúrate de tener Docker Desktop instalado y en funcionamiento.**
+- Este paso es el mas recomendado y te ahorra tiempo en configuración y dependencias.
 ```bash
 git clone https://github.com/arman2r/studentPlatform_BE.git
 ```
