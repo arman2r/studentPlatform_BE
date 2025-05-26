@@ -2,7 +2,7 @@
 # Este archivo .gitignore ha sido creado automáticamente por Microsoft(R) Visual Studio.
 ################################################################################
 
-/appsettings.json
+#/appsettings.json
 
 # Build results
 bin/
@@ -14,7 +14,7 @@ obj/
 *.vsidx
 *.suo
 *.user
-*.db
+#*.db
 *.shm
 *.wal
 *.v2
@@ -27,7 +27,7 @@ obj/
 
 # Others
 *.DS_Store
-*.env
+#*.env
 *.swp
-*.bak
+#*.bak
 *.tmp
