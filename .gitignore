@@ -3,3 +3,31 @@
 ################################################################################
 
 /appsettings.json
+
+# Build results
+bin/
+obj/
+*.dll
+*.exe
+*.pdb
+*.cache
+*.vsidx
+*.suo
+*.user
+*.db
+*.shm
+*.wal
+*.v2
+*.json
+*.log
+
+# VS folders
+.vs/
+.vscode/
+
+# Others
+*.DS_Store
+*.env
+*.swp
+*.bak
+*.tmp
