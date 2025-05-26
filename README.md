@@ -73,10 +73,3 @@ http://localhost:8080/swagger/index.html
 ### 6. Probar la API
 - ** Puedes utilizar herramientas como **Postman** o **Insomnia** para probar los endpoints de la API. La documentación de los endpoints está disponible en Swagger.
 - ** El proyecto incluye un script de migración que precarga algunos datos de ejemplo, esto le permiti interactuar directamente con las API o el aplicativo frontend directamente
-
-
-### 7. Migraciones y Seed Data
-Para aplicar migraciones y cargar datos de ejemplo, puedes ejecutar el siguiente comando en la terminal dentro del contenedor:
-```bash
-dotnet ef database update
-```
